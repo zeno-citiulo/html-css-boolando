@@ -17,7 +17,6 @@ header{
 .navbar{
   height: 80px;
   max-width: 1100px;
-  height: 80px;
 }
 
 .container{
@@ -57,3 +56,86 @@ header .navbar .row-left a{
 .logo{
   width: 20%;
 }
+
+/*      MAIN       */
+
+.macro-container{
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.container-main {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.product-card {
+  width: 33%;
+  position: relative;
+  text-align: center;
+  
+}
+
+.product-card img {
+  width: 100%;
+}
+
+.product-card .badge-discount {
+  position: absolute;
+  bottom: 55px;
+  left: 0px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.product-card .sustainability {
+  position: absolute;
+  bottom: 55px;
+  left: 45px;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  padding: 10px;
+}
+
+.info{
+  text-align: left;
+  flex-basis: 100%;
+}
+
+.object{
+  font-size: 14px;
+}
+
+.new-price{
+  color: red;
+  font-size: 14px;
+}
+
+.old-price{
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
