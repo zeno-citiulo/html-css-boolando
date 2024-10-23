@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 /*       HEADER       */
@@ -59,83 +59,91 @@ header .navbar .row-left a{
 
 /*      MAIN       */
 
-.macro-container{
-  width: 80%;
-  max-width: 1100px;
+.debug{
+  background-color: #ff6701bb;
+  border: 1px solid black;
+}
+
+.container{
+  max-width: 1370px;
   margin: 0 auto;
 }
 
-.container-main {
+.row{
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px;
 }
 
-.product-card {
-  width: 33%;
+.col{
+  width: calc(100%/3);
+  padding: 0 10px;
+}
+
+main{
+  padding-top: 100px;
+}
+
+img{
+  max-width: 100%;
+}
+
+.card{
+  margin-bottom: 20px;
+}
+
+.card .card-images{
   position: relative;
-  text-align: center;
-  
+  cursor: pointer;
 }
 
-.product-card img {
-  width: 100%;
-}
-
-.product-card .badge-discount {
+.card .card-images .secondary-image{
   position: absolute;
-  bottom: 55px;
-  left: 0px;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.card .card-images:hover .secondary-image{
+  display: block;
+}
+
+.card .card-images .favourite{
+  position: absolute;
+  background-color: white;
+  padding: 20px 15px;
+  top: 20px;
+  right: 0;
+}
+
+.card .card-images .favourite:hover{
+  color: red;
+}
+
+.card .card-images .badges{
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+
+.card .card-images .badges .badge{
+  display: inline-block;
   background-color: red;
   color: white;
-  padding: 5px;
-  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-right: 5px;
 }
 
-.product-card .sustainability {
-  position: absolute;
-  bottom: 55px;
-  left: 45px;
+.card .card-images .badges .badge.tag{
   background-color: green;
-  color: white;
-  padding: 5px;
-  font-size: 14px;
 }
 
-.heart {
-  position: absolute;
-  top: 10px;
-  right: 0px;
-  font-size: 20px;
-  color: black;
-  background-color: white;
-  padding: 10px;
+.card .product-name{
+  font-weight: bold;
 }
 
-.info{
-  text-align: left;
-  flex-basis: 100%;
-}
-
-.object{
-  font-size: 14px;
-}
-
-.new-price{
+.card .prices span{
+  font-weight: bold;
   color: red;
-  font-size: 14px;
 }
-
-.old-price{
-  font-size: 14px;
-  text-decoration: line-through;
-}
-
-
-
-
-
-
-
-
 
